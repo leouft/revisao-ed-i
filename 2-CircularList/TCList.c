@@ -16,6 +16,7 @@ TNo* TNo_createNFill(int info) {
     TNo* new = malloc(sizeof(TNo));
     new->info = info;
     new->prox = new;
+    return new;
 }
 
 TCList* TCList_create() {
