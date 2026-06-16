@@ -93,6 +93,7 @@ void TLList_print(TLList* lista) {
 
 TLList* TLList_merge(TLList* lista1, TLList* lista2) {
     TLList* new = TLList_create();
+    if (!new) return NULL;
     TNo* aux = lista1->inicio;
     // Inserindo a primeira lista:
     while (aux != NULL) {
@@ -104,6 +105,7 @@ TLList* TLList_merge(TLList* lista1, TLList* lista2) {
     while (aux) {
         if (aux->info < new->inicio->info) {
             TNo* newNo = TNo_createNFill(aux->info);
+            if (!newNo) return NULL;
             newNo->prox = new->inicio;
             new->inicio = newNo;
         }

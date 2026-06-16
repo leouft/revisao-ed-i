@@ -93,6 +93,7 @@ void TLList_print(TLList* lista) {
 
 TLList* TLList_intersection(TLList* lista1, TLList* lista2) {
     TLList* new = TLList_create();
+    if (!new) return NULL;
     TNo* aux = lista1->inicio;
     TNo* aux2;
     while (aux) { // Percorre a lista 1
