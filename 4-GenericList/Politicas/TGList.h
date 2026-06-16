@@ -14,8 +14,6 @@ TGList* TGList_create(char);
 // Como a lista vai ser genérica, só precisamos de uma função insert no .h, e lá no C chamamos a função de acordo com a política.
 bool TGList_insert(TGList*, int);
 
-bool TGList_remove(TGList*, int*);
-
 void TGList_print(TGList*);
 
 #endif
