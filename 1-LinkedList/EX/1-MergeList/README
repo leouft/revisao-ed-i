@@ -1,0 +1,5 @@
+Exercício:
+
+7. Fazer uma função que realiza o merge de duas listas ordenadas, gerando uma lista única
+ordenada e sem elementos repetidos. A função deverá receber as duas listas por parâmetro e
+criar e retornar uma terceira lista com o resultado.
