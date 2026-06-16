@@ -82,13 +82,13 @@ bool TCList_remove_end(TCList* lista, int* pinfo) {
 
 bool TCList_remove_begin(TCList* lista, int* pinfo) {
     if (lista->inicio != NULL) {
-        if (lista->inicio->prox == lista->inicio) {
-            *pinfo = lista->inicio->info;
-            free(lista->inicio);
+        TNo* aux = lista->inicio;
+        if (aux->prox == lista->inicio) {
+            *pinfo = aux->info;
+            free(aux);
             lista->inicio = NULL;
         }
         else {
-            TNo* aux = lista->inicio;
             while (aux->prox != lista->inicio)
                 aux = aux->prox;
             aux->prox = lista->inicio->prox;
