@@ -1,0 +1,4 @@
+Exercício:
+
+5. Fazer uma função para realizar cópia uma lista L1 em outra L2, eliminando os elementos
+repetidos. L2 deverá ser retornada pela função.
